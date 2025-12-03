@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Elevyx Flow – Automations To Stop Chasing & Start Closing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-orbits"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-inner page-width">
+      <div class="logo">
+        <span class="logo-main">Elevyx</span><span class="logo-glow">Flow</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Services</a>
+      </nav>
+      <button class="btn btn-primary nav-cta" id="open-book-call">
+        <span>Book a Call</span>
+        <span class="btn-arrow">→</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="page-width hero-centered">
+      <div class="hero-left">
+        <span class="pill">Automation studio for real estate & service businesses</span>
+
+        <div class="hero-heading-row">
+          <h1 class="hero-title">
+            Automations To Stop <span class="gradient">Chasing</span><br />
+            &amp; <span class="gradient">Start Closing</span>
+          </h1>
+          <!-- flow map doodle -->
+          <div class="flow-map" data-parallax="hero">
+            <span class="fm-node fm-node-1"></span>
+            <span class="fm-node fm-node-2"></span>
+            <span class="fm-node fm-node-3"></span>
+            <span class="fm-node fm-node-4"></span>
+            <span class="fm-line fm-line-1"></span>
+            <span class="fm-line fm-line-2"></span>
+            <span class="fm-line fm-line-3"></span>
+          </div>
+        </div>
+
+        <p class="hero-sub">
+          Elevyx Flow builds calm, reliable systems that handle leads, follow‑ups and bookings
+          so your team can focus on closing deals.
+        </p>
+
+        <div class="hero-cta">
+          <button class="btn btn-primary hero-cta-btn" id="open-book-call-main">
+            <span>Get a Free Workflow Audit</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+
+        <!-- mini social proof -->
+        <div class="hero-social-proof">
+          <span class="badge">Trusted by 10+ real estate teams</span>
+          <span class="badge">Built for agents</span>
+          <span class="badge">24/7 coverage</span>
+        </div>
+
+        <div class="hero-rows">
+          <div class="hero-row">
+            <span class="row-label">You focus on</span>
+            <span class="row-value">Calls, showings & clients</span>
+          </div>
+          <div class="hero-row">
+            <span class="row-label">We handle</span>
+            <span class="row-value">Replies, reminders & routing</span>
+          </div>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="metric-label">24/7</span>
+            <span class="metric-text">Lead capture & follow‑up</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">0</span>
+            <span class="metric-text">Missed opportunities</span>
+          </div>
+        </div>
+
+        <!-- hero doodles (parallax) -->
+        <span class="hero-doodle hero-doodle-arc" data-parallax="hero"></span>
+        <span class="hero-doodle hero-doodle-curve" data-parallax="hero"></span>
+        <span class="hero-doodle hero-doodle-dots" data-parallax="hero"></span>
+        <span class="hero-doodle hero-doodle-arrow" data-parallax="hero"></span>
+      </div>
+    </div>
+  </main>
+
+  <!-- TESTIMONIAL MARQUEE -->
+  <section class="section testimonials">
+    <div class="page-width">
+      <div class="testimonials-header">
+        <span class="testimonials-label">What teams say</span>
+        <span class="testimonials-doodle-dot"></span>
+      </div>
+    </div>
+    <div class="testimonial-marquee">
+      <div class="marquee-track">
+        <article class="testimonial-card">
+          <p class="testimonial-text">“Elevyx turned our messy lead list into a clean queue of booked calls.”</p>
+          <p class="testimonial-name">— Yatharth kumar</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">“We close more deals now because nothing waits for a human reply.”</p>
+          <p class="testimonial-name">— Siddarth b</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">“Weekend enquiries are handled before we even open the office on Monday.”</p>
+          <p class="testimonial-name">— Yashdeep bharti</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">“The team finally stopped copy‑pasting the same responses all day.”</p>
+          <p class="testimonial-name">— Jabir siddiqui</p>
+        </article>
+
+        <!-- duplicate set for seamless loop -->
+        <article class="testimonial-card">
+          <p class="testimonial-text">“Elevyx turned our messy lead list into a clean queue of booked calls.”</p>
+          <p class="testimonial-name">— Yatharth kumar</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">“We close more deals now because nothing waits for a human reply.”</p>
+          <p class="testimonial-name">— Siddarth b</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">“Weekend enquiries are handled before we even open the office on Monday.”</p>
+          <p class="testimonial-name">— Yashdeep bharti</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">“The team finally stopped copy‑pasting the same responses all day.”</p>
+          <p class="testimonial-name">— Jabir siddiqui</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="page-width">
+      <div class="section-header" data-anim="section">
+        <h2>What Elevyx Flow Automates</h2>
+        <p>Three focused layers that keep your pipeline moving without adding headcount.</p>
+      </div>
+
+      <!-- timeline spine -->
+      <div class="services-timeline-spine"></div>
+
+      <div class="services-grid">
+        <article class="service-card" data-anim="service">
+          <div class="service-tag">01</div>
+          <h3>Smart Chatbots</h3>
+          <ul class="service-list">
+            <li>Instant replies to new leads.</li>
+            <li>Guided questions to qualify interest.</li>
+            <li>Gentle follow‑ups on autopilot.</li>
+          </ul>
+          <p class="service-caption">Step 1 · Attract & qualify</p>
+          <span class="service-doodle service-doodle-curve"></span>
+        </article>
+
+        <article class="service-card" data-anim="service">
+          <div class="service-tag">02</div>
+          <h3>AI Voice Receptionist</h3>
+          <ul class="service-list">
+            <li>Answers every inbound call.</li>
+            <li>Follows your script & FAQs.</li>
+            <li>Books appointments into your calendar.</li>
+          </ul>
+          <p class="service-caption">Step 2 · Answer & route</p>
+          <span class="service-doodle service-doodle-loop"></span>
+        </article>
+
+        <article class="service-card" data-anim="service">
+          <div class="service-tag">03</div>
+          <h3>CRM & Lead Ops</h3>
+          <ul class="service-list">
+            <li>Every lead captured once, stored cleanly.</li>
+            <li>Automatic tagging and task creation.</li>
+            <li>Simple dashboards for your team.</li>
+          </ul>
+          <p class="service-caption">Step 3 · Track & report</p>
+          <span class="service-doodle service-doodle-dash"></span>
+        </article>
+      </div>
+
+      <!-- example flow row -->
+      <div class="mini-flow">
+        <div class="flow-chip">Lead form</div>
+        <div class="flow-arrow">
+          <span class="flow-dots"></span>
+        </div>
+        <div class="flow-chip">Chatbot / Voice</div>
+        <div class="flow-arrow">
+          <span class="flow-dots"></span>
+        </div>
+        <div class="flow-chip">Calendar + CRM</div>
+      </div>
+
+      <div class="banner" data-anim="banner">
+        <h3>A Calm, Connected Workflow</h3>
+        <p>All of this plugs into your existing tools with clear reporting and no extra noise.</p>
+        <span class="banner-doodle banner-doodle-loop"></span>
+        <span class="banner-doodle banner-doodle-spark"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE STRIP -->
+  <section class="section why-strip">
+    <div class="page-width">
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-number">2x</span>
+          <span class="why-label">Faster first response</span>
+        </div>
+        <div class="why-card">
+          <span class="why-number">90%</span>
+          <span class="why-label">After‑hours leads answered</span>
+        </div>
+        <div class="why-card">
+          <span class="why-number">+10</span>
+          <span class="why-label">Extra calls booked / week</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="page-width">
+      <div class="section-header" data-anim="section">
+        <h2>Built For Busy Teams</h2>
+        <p>Started by two students who were tired of seeing good leads ignored.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy" data-anim="about">
+          <ul class="about-bullets">
+            <li>Born from solving follow‑up problems for a single real estate team.</li>
+            <li>Now helping agencies answer every call and message, even after hours.</li>
+            <li>Always designed around your current tools and processes.</li>
+          </ul>
+        </div>
+
+        <div class="about-card" data-anim="about">
+          <h3>What Working With Us Feels Like</h3>
+          <ul class="about-list">
+            <li>Clear diagrams of your new workflow.</li>
+            <li>Short weekly check‑ins, not long chaos calls.</li>
+            <li>Continuous tweaks as your team grows.</li>
+          </ul>
+          <div class="quote-bubbles">
+            <div class="quote-bubble">
+              <p>“Setup felt simple, but the impact on our calendar was huge.”</p>
+              <span class="quote-name">— Maaz Ahmed</span>
+              <span class="quote-stars">★ ★ ★ ★ ★</span>
+            </div>
+            <div class="quote-bubble">
+              <p>“Our agents now spend their time talking to people, not tools.”</p>
+              <span class="quote-name">— Aadi Verma</span>
+              <span class="quote-stars">★ ★ ★ ★ ★</span>
+            </div>
+          </div>
+          <span class="doodle doodle-ring"></span>
+          <span class="doodle doodle-wave"></span>
+          <span class="doodle doodle-arrow-small"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="page-width footer-inner">
+      <div>
+        <span class="logo-main">Elevyx</span><span class="logo-glow">Flow</span>
+        <p>Automations and AI agents for teams that want to close without the chaos.</p>
+        <p>©siddarth</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOK A CALL MODAL -->
+  <div class="modal-backdrop" id="book-call-modal">
+    <div class="modal">
+      <button class="modal-close" id="close-book-call">&times;</button>
+      <h3>Book a Call</h3>
+      <p>Share a few details and your email app will open with everything pre‑filled.</p>
+      <form id="book-call-form">
+        <div class="field-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="field-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" />
+        </div>
+        <div class="field-group">
+          <label for="message">What do you want to automate?</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary modal-submit">
+          <span>Send Details</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
